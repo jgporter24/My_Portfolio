@@ -78,8 +78,15 @@ body {
   margin-bottom: 15px; 
   }
   
+  /*.wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* Each section class */
   section {
+    flex-direction: row;
+    align-items: stretch;
     background-color: #fff;
     display: flex;
     flex-wrap:wrap;
@@ -88,21 +95,34 @@ body {
     margin-right: 20px;
   }
   
+  section header h3 {
+    text-align: right;
+    border-right: 3px solid rgb(81, 81, 81);
+    line-height: 1.1;
+    padding-right: 15px;
+    width: 20%;
+
+  }
+
   .column {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 75px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 25px;
     padding-bottom: 25px;
     font-size: 150%;
+    width: 100%;
 
   }
 
   .rightsection {
+    flex: 0 0 85%;
     font-size: 65%;
+    padding-left: 15px;
+    justify-content: center;
   }
 
+  
  .content {
     display: flex;
     flex-wrap: wrap;
@@ -113,4 +133,10 @@ body {
 
 }
   
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 300px;
+}
   
