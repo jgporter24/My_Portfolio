@@ -78,11 +78,7 @@ body {
   margin-bottom: 15px; 
   }
   
-  /*.wrapper {
-    max-width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   /* Each section class */
   section {
     flex-direction: row;
@@ -132,11 +128,26 @@ body {
     float: right;
 
 }
-  
-.list {
-    display: flex;
+
+.card {
+    position: relative;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 300px;
+    display: flex;
+    max-width: fit-content;
+}
+
+div img {
+    scale: 75%;
+    box-shadow: 0 0 20px 7px #13293d;
+
 }
   
+.list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    min-width: 300px;
+}
+ .rightsection ul
